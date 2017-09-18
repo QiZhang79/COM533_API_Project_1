@@ -27,7 +27,7 @@ var  users = [{
 
 
 $('#button').on("click",function(e){
-	var container = ["name", "id", "loaction", "social_media"];
+	var container = ["name", "id", "location", "social_media"];
 	var tbody = $("#user_table tbody");
 
 	for(var i = 0; i < users.length; i++){
