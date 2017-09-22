@@ -5,31 +5,49 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Introduction of API's students</h1>
+    <h1>Introduction of API's Class</h1>
+    <h4>Instructor: Prof. Karl Stolley</h4>
   </header>
   <main id="content">
-    <button id="button">Know about us!</button>
-      <div id="result">
-        <table id="user_table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Id</th>
-              <th>Location</th>
-              <th>Social Media</th>
-              <th>Gitname</th>
-            </tr>
-          </thead>
-          <tbody>
+    <p id="datetime"></p>
+    <div>
+      <form id="user_form" method="get" action="/submit.php">
+        <label for="name">Name</label>
+        <input class="form_styling" type="text" name="name" id="name" />
+        <label for="studentid">Student ID</label>
+        <input class="form_styling" type="text" name="id" id="studentid" />
+        <label for="Location">Location</label>
+        <input class="form_styling" type="text" name="loaction" id="location" />
+        <label for="social">Socail Media</label>
+        <input class="form_styling" type="text" name="social" id="social" />
+        <label for="gitname">Gitname</label>
+        <input class="form_styling" type="text" name="gitname" id="gitname" />
+        <input type="submit" name="submit" id="submit" value="Add New One" />
+        <input type="reset" name="reset" id="reset" value="Reset" />
+      </form>
+    </div>
+    <div id="result">
+      <table id="user_table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Student ID</th>
+            <th>Location</th>
+            <th>Social Media</th>
+            <th>Gitname</th>
+          </tr>
+        </thead>
+        <tbody>
 
-          </tbody>
-        </table>
-      </div>
-
-    </main>
+        </tbody>
+      </table>
+      <div id="pictures"></div>
+    </div>
+  </main>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
